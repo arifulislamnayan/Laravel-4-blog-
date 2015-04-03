@@ -72,6 +72,7 @@
             <div class="col-lg-8">
 
                 @yield('content')
+                @yield('new_blog')
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->

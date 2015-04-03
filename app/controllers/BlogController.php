@@ -11,7 +11,11 @@ class BlogController extends \BaseController {
 	{
 		//
 
-		$this->layout->master= View::make('blog.index');
+		$this->layout->master= View::make('blog.index', array(
+
+			'posts'=>Post::all()
+
+			));
 		//$this->layout->master= View::make('layouts.master');
 		//return View::make('blog.index');
 
