@@ -1,4 +1,4 @@
-@section('new_blog')
+@section('header-right')
 
 <a href="{{ URL::route('newPost')}}" class="btn btn-default btn-lg">
 <span class="glyphicon glyphicon-pencil"></span>
