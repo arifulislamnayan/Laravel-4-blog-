@@ -3,6 +3,10 @@
 <header>
 <h2>{{ $post->title }}</h2>
 </header>
+
+
+<p><span class="glyphicon glyphicon-time"></span> Posted {{ $post->created_at->diffForHumans() }}</p>
+
 <div class="content">
 	{{ $post->content }}
 
@@ -11,10 +15,10 @@
 
 </br>
 
-<footer>
+<!-- <footer>
 <p> Posted {{ $post->created_at->diffForHumans() }}</p>
 
-</footer>
+</footer> -->
 
  </article>
 

@@ -5,7 +5,7 @@ class BlogController extends \BaseController {
 	
 
 
-	protected $layout= 'layouts.master';
+	protected $layout= 'layouts.home';
 
 	public function index()
 	{
@@ -37,11 +37,6 @@ public function newPost()
 		$post->save();
 
 		return Redirect::route('viewPost',array('id'=> $post->id));
-
-
-
-
-
 	}
 
 
